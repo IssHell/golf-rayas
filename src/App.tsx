@@ -1,26 +1,13 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./index.css";
+import React from "react";
+import Retool from "react-retool";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Retool
+        url="https://golfliner.retool.com/embedded/public/da9cab9d-20ca-4b15-9bfc-395001a09057"
+        // styles={{ Height: "1000px" }}
+        height="900px"
+      />
   );
 }
-
-export default App;
